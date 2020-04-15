@@ -33,7 +33,46 @@ $(document).ready(function() {
   $('.hero-block').mouseenter(function () {
     $('#string').removeClass('arrow-top')
   });
-  
+
+});
+
+$(document).ready(function () {
+  $('.slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: $('.arrows__left'),
+    nextArrow: $('.arrows__right'),
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
 });
 
 // $('#string').removeClass('arrow-top')
