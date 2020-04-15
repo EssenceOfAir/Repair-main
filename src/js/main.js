@@ -20,4 +20,20 @@ $(document).ready(function() {
   $('#close').click(function() {
     $('#modal').removeClass('modal_active')
   });
+  $(window).scroll(function() {
+    if($(this).scrollTop()>=600)
+    $('#string').addClass('arrow-top');
+  });
+  $('#string').click(function(){
+    $('html, body').animate({
+      scrollTop: 0,
+      scrollLeft: 300
+    }, 1000)
+  });
+  $('.hero-block').mouseenter(function () {
+    $('#string').removeClass('arrow-top')
+  });
+  
 });
+
+// $('#string').removeClass('arrow-top')
