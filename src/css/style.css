@@ -37,6 +37,9 @@ img {
   .container {
     width: 760px;
   }
+  .card {
+    margin: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -70,6 +73,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  max-width: 500px;
 }
 
 .section-subtitle {
@@ -429,7 +433,6 @@ img {
 }
 
 .portfolio__title {
-  max-width: 500px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -440,5 +443,90 @@ img {
   display: flex;
   justify-content: space-between;
   margin-top: 68px;
+}
+
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+.price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px rgba(255, 210, 0, 0.3);
+}
+
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+.card__text {
+  padding: 40px;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  transition: 0.2s;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -4px;
+  left: 0;
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */
