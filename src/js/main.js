@@ -33,7 +33,22 @@ $(document).ready(function() {
   $('.hero-block').mouseenter(function () {
     $('#string').removeClass('arrow-top')
   });
-
+  $('#brif-form').validate({
+    rules: {
+      username: "required",
+      phone: "required",
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      username: "Укажите имя",
+      phone: "Укажите телефон",
+      email: "Укажите email"
+    }
+  });
+  $('.phone').mask('+7 (999) 999-99-99');
 });
 
 $(document).ready(function () {
