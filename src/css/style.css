@@ -593,6 +593,10 @@ img {
   max-width: 100%;
 }
 
+.yellow-block {
+  margin-bottom: 100px;
+}
+
 .yellow-block__box {
   max-width: 900px;
   margin: auto;
@@ -610,8 +614,7 @@ img {
 }
 
 .choice__item {
-  margin-top: 127px;
-  margin-bottom: 143px;
+  margin-bottom: 70px;
   margin-right: 30px;
   max-width: 370px;
   max-height: 410px;
@@ -641,6 +644,7 @@ img {
 
 .choice__block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -658,5 +662,46 @@ img {
 .choice__bold {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+.warranty {
+  margin-top: 70px;
+}
+
+.warranty__title {
+  margin: auto;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  max-width: 650px;
+  text-align: center;
+}
+
+.warranty__box {
+  text-align: center;
+}
+
+.warranty__sert {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 99px;
+  margin-bottom: 200px;
+}
+
+.warranty__item {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 28px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.warranty__img {
+  max-width: 270px;
+  height: 360px;
+  border: 20px solid #f5f5f5;
+  margin-bottom: 41px;
 }
 /*# sourceMappingURL=style.css.map */
