@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -12,17 +13,17 @@
   <nav class="navbar" id="top">
     <div class="container">
       <div class="navbar__box">
-        <div class="navbar__logo">
+        <div class="navbar__logo wow fadeInLeft">
           <img src="img/logo.png" alt="Логотип" class="logo">
         </div>
         <!-- /.navbar__logo -->
-        <div class="navbar__info">
+        <div class="navbar__info wow fadeInRight">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+74954225131" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.navbar__contacts -->
-          <button class="button navbar__button" id="button">
+          <button class="button navbar__button wow pulse" data-wow-delay="2s" data-wow-iteration="5" id="button">
             Перезвоните мне
           </button> <!-- /.button navbar__button -->
         </div>
@@ -37,7 +38,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-block">
-          <div class="hero-text">
+          <div class="hero-text wow fadeIn" data-wow-duration="1s">
             <h1 class="hero-text__title">
               Внутренняя отделка помещений "под ключ"
             </h1>
@@ -74,7 +75,7 @@
             </ul>
           </div>
           <!-- /.hero-text -->
-          <div class="hero-image">
+          <div class="hero-image wow fadeIn" data-wow-duration="1s">
             <img src="img/hero/hero-image.png" alt="План квартиры">
           </div>
         </div>
@@ -84,7 +85,7 @@
     </section>
     <!-- /.hero -->
 
-    <section class="offer section">
+    <section class="offer section wow fadeInUp" data-wow-offset="200" data-wow-duration="1s">
       <div class="container">
         <div class="offer-block">
           <h2 class="section-title offer__title">
@@ -115,7 +116,7 @@
     </section>
     <!-- /.offer -->
 
-    <section class="section portfolio">
+    <section class="section portfolio wow fadeInUp" data-wow-offset="200" data-wow-duration="1s">
       <div class="container slider__block">
         <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
         </h2>
@@ -149,14 +150,14 @@
     </section>
     <!-- /.section portfolio -->
 
-    <section class="section price">
+    <section class="section price wow fadeInUp" data-wow-offset="200" data-wow-duration="1s">
       <div class="container">
         <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2>
         <!-- /.section-title price__title -->
         <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
         <!-- /.section-subtitle price__subtitle -->
         <div class="cards">
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.3s" data-wow-offset="100" data-wow-delay="1s">
             <div class="card__image"><img src="img/price/card-1.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -168,7 +169,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.6s" data-wow-offset="100" data-wow-delay="1s">
             <div class="card__image"><img src="img/price/card-2.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -180,7 +181,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.9s" data-wow-offset="100" data-wow-delay="1s">
             <div class="card__image"><img src="img/price/card-3.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -192,7 +193,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.3s" data-wow-offset="100">
             <div class="card__image"><img src="img/price/card-4.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -204,7 +205,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.6s" data-wow-offset="100">
             <div class="card__image"><img src="img/price/card-5.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -216,7 +217,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow fadeInUp" data-wow-duration="0.9s" data-wow-offset="100">
             <div class="card__image"><img src="img/price/card-6.jpg" alt=""></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -256,8 +257,9 @@
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
-
+    new WOW().init();
   </script>
 
 </body>
